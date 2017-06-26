@@ -1,0 +1,30 @@
+[root]
+name = "rust-NAPI-fibonacci"
+version = "0.0.1"
+dependencies = [
+ "node-api 0.1.0 (git+https://github.com/jupp0r/node-api.git)",
+]
+
+[[package]]
+name = "futures"
+version = "0.1.14"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "node-api"
+version = "0.1.0"
+source = "git+https://github.com/jupp0r/node-api.git#a157b1c2ff560b7c15893ffdb22f978d9c9ac39d"
+dependencies = [
+ "futures 0.1.14 (registry+https://github.com/rust-lang/crates.io-index)",
+ "node-api-sys 0.1.1 (git+https://github.com/jupp0r/node-api.git)",
+]
+
+[[package]]
+name = "node-api-sys"
+version = "0.1.1"
+source = "git+https://github.com/jupp0r/node-api.git#a157b1c2ff560b7c15893ffdb22f978d9c9ac39d"
+
+[metadata]
+"checksum futures 0.1.14 (registry+https://github.com/rust-lang/crates.io-index)" = "4b63a4792d4f8f686defe3b39b92127fea6344de5d38202b2ee5a11bbbf29d6a"
+"checksum node-api 0.1.0 (git+https://github.com/jupp0r/node-api.git)" = "<none>"
+"checksum node-api-sys 0.1.1 (git+https://github.com/jupp0r/node-api.git)" = "<none>"

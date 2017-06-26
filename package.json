@@ -1,0 +1,14 @@
+{
+  "name": "rust-NAPI-fibonacci",
+  "version": "0.0.1",
+  "description": "A fibonacci demo of [rust-node-api](https://github.com/jupp0r/node-api).",
+  "main": "index.js",
+  "repository": "https://github.com/nswbmw/rust-NAPI-fibonacci",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "rm -rf index.node && rm -rf native/target && cd native && cargo build",
+    "postinstall": "cp ./native/target/debug/librust_NAPI_fibonacci.dylib index.node || cp ./native/target/debug/librust_NAPI_fibonacci.so index.node || cp ./native/target/debug/librust_NAPI_fibonacci.dll index.node",
+    "prestart": "npm install",
+    "start": "node --napi-modules index.js"
+  }
+}

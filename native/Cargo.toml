@@ -1,0 +1,10 @@
+[package]
+name = "rust-NAPI-fibonacci"
+version = "0.0.1"
+authors = ["nswbmw <nswbmw1992@gmail.com>"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+node-api = { git = "https://github.com/jupp0r/node-api.git", branch = "master" }
