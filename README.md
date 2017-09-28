@@ -5,14 +5,14 @@ A fibonacci demo of [rust-node-api](https://github.com/jupp0r/node-api).
 ### Environment
 
 ```
-rustc -V => rustc 1.20.0-nightly (229d0d326 2017-06-23)
-node -v => v8.1.1
+rustc -V => rustc 1.22.0-nightly (0e6f4cf51 2017-09-27)
+node -v => v8.3.0
 ```
 
 ```js
 const rust = require('./index.node');
 
-function fib(n) {
+function fib (n) {
   if (n === 1 || n === 2) {
     return 1;
   }
@@ -34,9 +34,9 @@ print
 
 ```
 102334155
-node: 1000.278ms
+node: 1094.595ms
 102334155
-rust: 1078.474ms
+rust: 232.569ms
 ```
 
 ### Neon

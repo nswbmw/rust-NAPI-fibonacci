@@ -6,8 +6,8 @@
   "repository": "https://github.com/nswbmw/rust-NAPI-fibonacci",
   "license": "MIT",
   "scripts": {
-    "preinstall": "rm -rf index.node && rm -rf native/target && cd native && cargo build",
-    "postinstall": "cp ./native/target/debug/librust_NAPI_fibonacci.dylib index.node || cp ./native/target/debug/librust_NAPI_fibonacci.so index.node || cp ./native/target/debug/librust_NAPI_fibonacci.dll index.node",
+    "preinstall": "cd native && cargo build --release",
+    "postinstall": "cp native/target/release/libnapi.dylib index.node || cp native/target/release/libnapi.so index.node || cp native/target/release/libnapi.dll index.node",
     "prestart": "npm install",
     "start": "node --napi-modules index.js"
   }

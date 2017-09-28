@@ -1,6 +1,6 @@
 const rust = require('./index.node');
 
-function fib(n) {
+function fib (n) {
   if (n === 1 || n === 2) {
     return 1;
   }

@@ -4,7 +4,7 @@ extern crate node_api;
 
 napi_module!("fibonacci", register);
 
-use node_api::{NapiEnv, NapiValue, FromNapiValues, IntoNapiValue};
+use node_api::{NapiEnv, NapiValue};
 use node_api::{create_function, set_named_property};
 
 #[no_mangle]

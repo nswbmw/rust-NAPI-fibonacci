@@ -3,3 +3,4 @@ native/src/tmp*
 **/node_modules
 **/.DS_Store
 index.node
+packge-lock.json
